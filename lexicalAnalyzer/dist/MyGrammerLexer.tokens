@@ -1,0 +1,15 @@
+OPMUL=1
+OPDIV=2
+OPSOMA=3
+OPSUB=4
+AP=5
+FP=6
+NUMBERINT=7
+NUMBERREAL=8
+WS=9
+'*'=1
+'/'=2
+'+'=3
+'-'=4
+'('=5
+')'=6
