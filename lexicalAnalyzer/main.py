@@ -7,6 +7,9 @@ from dist.MyGrammerVisitor import MyGrammerVisitor
 #ATTENTION: when the grammar rules are changed, you need to generate the grammar files from the command: 
 #  java -jar antlr-4.9.2-complete.jar -Dlanguage=Python3 MyGrammer.g4 -visitor -o dist
 
+#Command to run this code (with the virtual enviroment activated):
+#  python main.py code.txt
+
 if __name__ == "__main__":
     data = FileStream(sys.argv[1])
     print(data)
@@ -17,3 +20,6 @@ if __name__ == "__main__":
 
     for token in tokens:
         print(token.text, '->', MyGrammerLexer.ruleNames[token.type - 1])
+
+
+#Developed by Giovanna Marinho and Guilherme Molina
